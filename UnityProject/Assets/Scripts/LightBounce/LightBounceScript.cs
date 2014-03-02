@@ -13,6 +13,8 @@ public class LightBounceScript : MonoBehaviour {
 
 	private Vector3 sunX;
 
+	private Color targetColor;
+
 	// Use this for initialization
 	void Start () {
 		rotate = false;
@@ -23,11 +25,17 @@ public class LightBounceScript : MonoBehaviour {
 		sunAngle = new Vector3(sun.transform.eulerAngles.x, sun.transform.eulerAngles.y, sun.transform.eulerAngles.z);
 		transform.rotation = Quaternion.Euler(sunAngle);
 
+		if(targetColor != null){
+			bounceLight.light.color = Color.Lerp(bounceLight.light.color, targetColor, 10.0f * Time.deltaTime);
+		}
+
 		RaycastHit hit;
 		if (Physics.Raycast(transform.position, transform.forward, out hit, 100.0f)) {
 			hitMeshRender = hit.collider.gameObject.GetComponent<MeshRenderer>();
-			bounceLight.light.color = hitMeshRender.material.color;
+			//bounceLight.light.color = hitMeshRender.material.color;
+			targetColor = hitMeshRender.material.color;
 			bounceLight.transform.position = hit.point;
+
 		}
 		Debug.DrawRay(transform.position, transform.forward * 100);
 
