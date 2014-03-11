@@ -16,7 +16,7 @@ public class NewBehaviourScript : MonoBehaviour {
 		if (Physics.Raycast(transform.position, transform.forward, out hit)) {
 			light.transform.position = hit.point;
 
-			light.transform.position = light.transform.position + transform.forward * -1;
+			//light.transform.position = light.transform.position + transform.forward * -1;
 		}
 	
 		Debug.DrawRay(transform.position, transform.forward * 100);

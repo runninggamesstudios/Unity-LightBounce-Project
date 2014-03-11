@@ -38,7 +38,7 @@ public class LightBounceScript : MonoBehaviour {
 
 		}
 		Debug.DrawRay(transform.position, transform.forward * 100);
-
+		///*
 		if(sun.transform.eulerAngles.x > 20.0f  && rotate == false){
 			Debug.Log("1");
 			sun.transform.Rotate(Vector3.right * 20 * Time.deltaTime);
@@ -56,6 +56,6 @@ public class LightBounceScript : MonoBehaviour {
 				rotate = false;
 			}
 		}
-		
+		//*/
 	}
 }

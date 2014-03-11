@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LightBounce\LightBounceScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\UnnamedUnityTDS\UnityProject\Assets\Scripts\Global Scripts\PlayerController.cs">
     <Files>
-      <File FileName="Assets\Scripts\LightBounce\LightBounceScript.cs" Line="28" Column="25" />
+      <File FileName="..\..\UnnamedUnityTDS\UnityProject\Assets\Scripts\Global Scripts\EnemyProjectileScript.cs" Line="13" Column="21" />
+      <File FileName="..\..\UnnamedUnityTDS\UnityProject\Assets\Scripts\Global Scripts\CameraMoveScript.cs" Line="22" Column="6" />
+      <File FileName="..\..\UnnamedUnityTDS\UnityProject\Assets\Scripts\Global Scripts\PlayerController.cs" Line="176" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

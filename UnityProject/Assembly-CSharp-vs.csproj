@@ -52,6 +52,7 @@
      <Compile Include="Assets\PostProcesses2.0\Bloom\BloomObject.cs" />
      <Compile Include="Assets\PostProcesses2.0\Shafts\Shafts.cs" />
      <Compile Include="Assets\Scripts\LightBounce\LightBounceScript.cs" />
+     <Compile Include="Assets\lightbounce.cs" />
      <None Include="Assets\PostProcesses2.0\Shafts\AdditiveRadialBlur_20.shader" />
      <None Include="Assets\PostProcesses2.0\Shafts\AdditiveRadialBlur_10.shader" />
      <None Include="Assets\PostProcesses2.0\Bloom\AdditiveBlur.shader" />
